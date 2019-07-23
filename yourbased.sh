@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 set -e
-
-echo "inside script"
+brew install docker
 chmod +x .travis/run.sh
 chmod +x .travis/install.sh
 docker build -t ndts .travis/debian9_py2
