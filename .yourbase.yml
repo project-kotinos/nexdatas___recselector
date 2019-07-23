@@ -20,3 +20,9 @@ build_targets:
       - OS=debian9
       - PY=2
       - TEST=basic
+ci:
+  builds:
+    - name: default
+      build_target: default
+    - name: debian9basicpy2
+      build_target: debian9basicpy2
