@@ -7,7 +7,7 @@ dependencies:
 build_targets:
   - name: default
     commands:
-        - sudo apt-get update -qq
+        - apt-get update -qq
         - python -m ensurepip --default-pip
         - pip install flake8
         - flake8
