@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-set -e
+set -ex
 brew install docker
 chmod +x .travis/run.sh
 chmod +x .travis/install.sh
