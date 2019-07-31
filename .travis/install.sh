@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+set -ex
 
 # workaround for incomatibility of default ubuntu 16.04 and tango configuration
 if [ $1 = "ubuntu16.04" ]; then
