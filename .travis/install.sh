@@ -70,7 +70,7 @@ docker exec --user root ndts chown -R tango:tango .
 
 if [ $2 = "2" ]; then
     echo "install python-nxsrecselector"
-    docker exec --user root ndts /bin/sh -c 'pwd; python setup.py -q install'
+    docker exec --user root ndts /bin/sh -c 'pwd; ls; python setup.py -q install'
 else
     echo "install python3-nxsrecselector"
     docker exec --user root ndts python3 setup.py -q install
