@@ -8,7 +8,7 @@ fi
 
 echo "restart mysql"
 docker exec --user root ndts service mysql stop
-docker exec --user root ndts /bin/sh -c '$(service mysql start &) && sleep 30'
+docker exec --user root ndts /bin/sh -c '(service mysql start &) && sleep 30'
 
 docker exec --user root ndts /bin/sh -c 'export DEBIAN_FRONTEND=noninteractive; apt-get -qq update; apt-get -qq install -y   tango-db tango-common; sleep 10'
 if [ $? -ne "0" ]
