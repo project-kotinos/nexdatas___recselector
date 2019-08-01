@@ -8,7 +8,8 @@ docker build -t ndts .travis/${OS}_py${PY}
 pwd
 ls
 docker run  --name  ndts -d -it -v `pwd`:/home/tango  ndts
-docker exec --user root ndts /bin/sh -c 'pwd; ls'
+docker exec --user root ndts /bin/sh -c 'mount; pwd; ls'
+
 .travis/install.sh ${OS} ${PY}
 .travis/run.sh ${TEST} ${PY}
 docker stop ndts
