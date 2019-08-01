@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+set -ex
 
 if [ $2 = "2" ]; then
     echo "run python-nxsrecselector"
