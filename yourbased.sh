@@ -6,6 +6,7 @@ chmod +x .travis/install.sh
 docker rm --force ndts || true
 docker build -t ndts .travis/debian9_py2
 pwd
+ls
 docker run  --name  ndts -d -it -v `pwd`:/home/tango  ndts
 .travis/install.sh debain9 2
 .travis/run.sh basic 2
